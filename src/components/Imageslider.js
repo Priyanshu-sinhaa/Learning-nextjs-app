@@ -11,10 +11,10 @@ function Imageslider({Imgarr}) {
  
   const dots = Array.from(array,(_,index)=>{
     if(index===i){
-      return(<div className="h-2 w-2 border-2 rounded mx-1 bg-white"></div>)
+      return(<div key={index} className="h-2 w-2 border-2 rounded mx-1 bg-white"></div>)
     }
     else{
-      return(<div className="h-2 w-2 border-2 rounded mx-1 "></div>)
+      return(<div key={index} className="h-2 w-2 border-2 rounded mx-1 "></div>)
     }
   });
 
@@ -50,7 +50,7 @@ function Imageslider({Imgarr}) {
       <div className='flex justify-center items-center'>
       <div className="h-60 w-2/5 bg-blue-500 border rounded-lg grid grid-cols-[20%_minmax(0px,_1fr)_20%] sm: w-4/5">
         <div className="flex justify-center items-center"><button onClick={back} className='bg-red-200 border rounded-lg items-center'>Back</button></div>
-        <div className="grid grid-cols-1 grid-rows-[90%_10%]"><div className='flex justify-center items-center'><Image alt='dog pic' className='border rounded-md my-2 sm: my-10 sm: h-48 w-96' width={300} height={300} src={pic} /></div> <div key={dots} className='flex justify-center items-center'>{dots}</div></div>
+        <div className="grid grid-cols-1 grid-rows-[90%_10%]"><div className='flex justify-center items-center'><Image alt='dog pic' className='border rounded-md my-2 sm: my-10 sm: h-48 w-96' width={300} height={300} src={pic} /></div> <div className='flex justify-center items-center'>{dots}</div></div>
         <div className="flex justify-center items-center"><button onClick={next} className='bg-red-200 border rounded-lg'>Next</button></div>
       </div>
       </div>

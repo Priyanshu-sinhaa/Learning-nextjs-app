@@ -37,8 +37,8 @@ export default function Home() {
     <main >
       <Imageslider Imgarr={['/Images/0.jpg','/Images/1.jpg','/Images/2.jpg','/Images/3.jpg','/Images/4.jpg']}/>
       <section className="bg-blue-500 h-screen w-200 ">
-        <button onClick={()=>{setlang(english)}}>English</button>
-        <button onClick={()=>{setlang(hindi)}}>Hindi</button>
+        <button className='bg-red-500 border rounded-lg m-5 ' onClick={()=>{setlang(english)}}>English</button>
+        <button className='bg-red-500 border rounded-lg m-5 ' onClick={()=>{setlang(hindi)}}>Hindi</button>
         <Multilang language={lang}/>
       </section>
     </main>

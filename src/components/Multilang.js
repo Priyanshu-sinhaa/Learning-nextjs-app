@@ -7,8 +7,9 @@ function Multilang({language}) {
     const statement = language.statement;
   return (
     <div>
-      <h1>{header}</h1>
+      <h1 className=' text-xl m-14 bg-purple-500 '>{header}</h1>
       <h2>{statement}</h2>
+
     </div>
   )
 }

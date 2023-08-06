@@ -26,7 +26,7 @@ export default function Home() {
 
   const english = new Language('english')
   english.header = "Hello";
-  english.statement = "You're Welcome !"
+  english.statement = "You're Welcome again!"
 
 
 
